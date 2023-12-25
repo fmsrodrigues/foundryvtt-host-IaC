@@ -1,0 +1,26 @@
+{
+  "name": "foundryvtt-oracle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup src",
+    "start": "tsx src/index.ts",
+    "start:dev": "tsx src/index.ts --watch",
+    "start:prod": "node dist/index.js",
+    "test": "vitest",
+    "test:watch": "vitest -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  },
+  "dependencies": {
+    "@pulumi/oci": "^1.17.0"
+  }
+}
